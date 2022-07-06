@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js" defer></script>
+
+    <title></title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header><h1>Lista de Compras</h1></header>
+    <main>
+        <div class="container">
+            <div class="headerContainer">
+                <h2>Controle de produtos</h2>
+                <p>Lista de produtos</p>
+            </div>
+            <div class="bodyContainer">
+                <div class="inputContainer">
+                    <div class="inputField">
+                        <label for="">Produto</label>
+                        <input type="text" id="">
+                    </div>
+                    <div class="inputField">
+                        <label for="">Valor</label>
+                        <input type="number" min="0.1" id="">
+                    </div>
+                    <div class="inputField">
+                        <label for="">Quantidade</label>
+                        <input type="number" min="0.1" id="">
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="btn btnSave">Salvar</button>
+                        <button class="btn btnCancel">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tableContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unidade</th>
+                            <th>Valor Total</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Papel</td>
+                            <td>25</td>
+                            <td>0,25</td>
+                            <td>6,25</td>
+                            <td class="actionItens">
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="footerContainer">
+                <div><button class="btn">Limpar Tabela</button></div>
+                <div class="Value"><p>Valor Total : R$ <span class="ValueNumber">00,00</span></p></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

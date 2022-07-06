@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    resize: none;
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    --primary-color:#8A2BE2;
+    --bg-text-table-color: #CCCCCC;
+    --bg-body-color: #FAFBFC;
+    --text-color: #000;
+    --secundary-color: #fff;
+}
+html{
+    font: normal normal 16px 'Nunito Sans', sans-serif ;
+}
+header{
+    /* width: 100vw; */
+    height: 8rem;
+    /* text-align: center; */
+    /* padding: 1.5rem 0; */
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    color: var(--secundary-color);
+}
+main{
+    background-color: var(--bg-body-color);
+}
+.container{
+    padding: 0 12rem;
+}
+.headerContainer{
+    margin: 2rem 0;
+    letter-spacing: .2rem;
+}
+.bodyContainer{
+    border:2px solid #a3a3a3 ;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.bodyContainer .inputField{
+    width: 100%;
+    margin: 1rem 0;
+}
+.bodyContainer .inputField label{
+    font-size: 1.35rem;
+}
+.bodyContainer .inputField input{
+    width: 95%;
+    height: 1.5rem;
+    padding: .4rem 1rem;
+    border: 1px solid #a3a3a3;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: 0 1rem 1rem 0;
+}
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.btn{
+    /* width: 4rem; */
+    /* height: 2rem; */
+    padding: .5rem 2rem;
+    text-align: center;
+    border-radius: .6rem;
+    color: var(--secundary-color);
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    opacity: .9;
+}
+.btn:hover{
+    opacity: 1;
+}
+.btnSave, .btnCancel{
+    margin: 0 1.5rem;
+}
+.tableContainer table{
+    width: 100%;
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin: 2rem 0 10rem 0;
+}
+.tableContainer table td, .tableContainer table th{
+    border: 1px solid ;
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--bg-text-table-color);
+    align-items: start;
+}
+.tableContainer table td{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: #fff;
+}
+/* .actionItens{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 1rem 0 3rem 0; */
+    position: fixed;
+    bottom: 1rem;
+}
+.Value{
+    font-size: 1.4rem;
+    border: 2px solid;
+    padding: .4rem 2rem;
+    border-radius: .5rem;
+    position: fixed;
+    right: 12rem;
+}
+.ValueNumber{
+    font-weight: bold;   
+}
